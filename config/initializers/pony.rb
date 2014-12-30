@@ -3,6 +3,8 @@
 Pony.options = {
 
   :to => 'dianadgriffin@gmail.com',
+  :from => "Jeff Patton<jeff.patton@ac4d.com>",
+  :reply_to => "Jeff Patton<jeff.patton@ac4d.com>",
   :via => :smtp,
   :via_options => {
     :address => 'smtp.gmail.com',
