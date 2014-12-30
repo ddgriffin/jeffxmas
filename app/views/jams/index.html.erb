@@ -1,0 +1,12 @@
+<% if current_user.admin? %>
+  <%= link_to 'New Jam', new_jam_path %>
+<% end %>
+<h1>Jeff, you got sweet moves.</h1>
+<br />
+<%= image_tag "guitaricon.png", alt:""%>
+<br />
+<br />
+<br />
+<p>Don't just stand there,</p>
+<%= button_to "Bust a move", bustamove_path, class:"btn" %>
+<%= image_tag "rope.png", alt:"", class:"image" %>

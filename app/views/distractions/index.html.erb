@@ -1,0 +1,13 @@
+<% if current_user.admin? %>
+  <%= link_to 'New Distraction', new_distraction_path %>
+<% end %>
+<h1>Jeff, you deserve a break.</h1>
+<br />
+<%= image_tag "campfireicon.png", alt:""%>
+<br />
+<br />
+<br />
+<p>Well, just for a minute...</p>
+<%= button_to "Distract me", distractme_path, class:"btn" %>
+<%= image_tag "mug.png", alt:"", class:"image" %>
+

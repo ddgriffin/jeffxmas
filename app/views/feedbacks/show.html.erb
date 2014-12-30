@@ -1,0 +1,23 @@
+<h1>Jeff, you're pretty smart.</h1>
+<h2>I'm pretty sure this work you just sent is awesome.</h2>
+<br />
+<%= image_tag "flagsicon.png", alt:""%>
+<br />
+<!-- <p id="notice"><%= notice %></p> -->
+<br />
+<div class="form-container-lg">
+  <p>
+    <b>Link to your work:</b><br />
+    <%= link_to "Linkety link link click!", @feedback.link_address %>
+  </p>
+  <br />
+  <p>
+    <b>Kind of feedback:</b><br />
+    <%= @feedback.whatkind %>
+  </p>
+  <br />
+  <p>
+    <b>A little more context:</b><br />
+    <%= @feedback.comments %>
+  </p>
+</div>

@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Link:</b>
+  <%= @distraction.link %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @distraction.description %>
+</p>
+
+
+<%= link_to 'Edit', edit_distraction_path(@distraction) %> |
+<%= link_to 'Back', distractions_path %>

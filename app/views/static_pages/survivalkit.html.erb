@@ -1,0 +1,39 @@
+<h1>Jeff, you got this.</h1>
+<h2>...but for those times it feels iffy, you've also got this <strong>ac4d survival kit</strong>.
+<br /> So, what do you need right now?</h2>
+
+<div class="box pull-left" span=6>
+  <%= image_tag "bandaidicon.png", alt:""%>
+  <br />
+  <h4>I'm bummed.</h4>
+  <%= link_to "I need a pep talk", reasons_path, class:"btn btn-mini" %>
+</div>
+
+<div class="box pull-left" span=6>
+  <%= image_tag "campfireicon.png", alt:"" %>
+  <br />
+  <h4>I'm spaced out.</h4>
+  <%= link_to "I need a breather", distractions_path, class:"btn btn-mini" %>
+</div>
+
+<div class="box pull-left" span=6>
+  <%= image_tag "guitaricon.png", alt:"" %>
+  <br />
+  <h4>I'm wired.</h4>
+  <%= link_to "I need to jam", jams_path, class:"btn btn-mini" %>
+</div>
+
+<div class="box pull-left" span=6>
+  <%= image_tag "flagsicon.png", alt:"" %>
+  <br />
+  <h4>I'm in the weeds.</h4>
+  <%= link_to "I need feedback", feedbacks_path, class:"btn btn-mini" %>
+</div>
+
+<div class="box box-right pull-left" span=6>
+  <%= image_tag "bearicon.png", alt:"" %>
+  <br />
+  <h4>I'm overwhelmed.</h4>
+  <%= link_to "I need a hug", hugs_path, class:"btn btn-mini" %>
+</div>
+<%= image_tag "all.png", alt:"", class:"image" %>

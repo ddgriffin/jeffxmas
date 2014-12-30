@@ -1,0 +1,20 @@
+
+
+<p>
+  <b>Because:</b>
+  <%= @reason.because %>
+</p>
+
+<p>
+  <b>Details:</b>
+  <%= @reason.details %>
+</p>
+
+<p>
+  <b>Picture:</b>
+  <%= image_tag(@reason.picture_url, :width => 600) if @reason.picture.present? %>
+</p>
+
+
+<%= link_to 'Edit', edit_reason_path(@reason) %> |
+<%= link_to 'Back', reasons_path %>

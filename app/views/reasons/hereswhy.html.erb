@@ -1,0 +1,19 @@
+<h1>Jeff, you're the coolest</h1>
+
+<% @reasons.each do |reason| %>
+  <h3>because <%= reason.because %></h3>
+  <p><%= reason.details if reason.details.present? %></p>
+  <%= image_tag(reason.picture_url, :width => 600) if reason.picture.present? %>
+  <% if current_user && current_user.admin? %>
+    <p><%= link_to 'Edit', edit_reason_path(reason) %> &nbsp;|&nbsp;
+    <%= link_to 'Delete', reason, method: :delete, data: { confirm: 'Are you sure?' } %></p>
+  <% end %>
+<% end %>
+<br />
+<%= image_tag "bandaidicon.png", alt:""%>
+<br />
+<br />
+<br />
+<p>That's true!</p>
+<%= button_to "Why else?", hereswhy_path, class:"btn" %>
+<%= image_tag "bandaid.png", alt:"", class:"image" %>

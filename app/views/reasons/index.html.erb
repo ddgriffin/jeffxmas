@@ -1,0 +1,13 @@
+<% if current_user.admin? %>
+  <%= link_to 'New Reason', new_reason_path %>
+<% end %>
+<h1>Jeff, you're the coolest.</h1>
+<br />
+<%= image_tag "bandaidicon.png", alt:""%>
+<br />
+<br />
+<br />
+<p>Really?</p>
+<%= button_to "Tell me why", hereswhy_path, class:"btn" %>
+<%= image_tag "bandaid.png", alt:"", class:"image" %>
+

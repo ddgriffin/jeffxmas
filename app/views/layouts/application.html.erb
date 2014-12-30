@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- <link href='http://fonts.googleapis.com/css?family=Cabin:400,700|Cabin+Sketch:700|Cabin+Condensed:400,700' rel='stylesheet' type='text/css'> -->
+  <link href='http://fonts.googleapis.com/css?family=Raleway:500,800,300|Cabin+Sketch:700' rel='stylesheet' type='text/css'>
+  <title>Jeff, you got this</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<%= render 'layouts/navbar'%>
+<div class="container">
+  <% if notice %>
+    <p class="alert alert-success"><%= notice %></p>
+  <% end %>
+  <% if alert %>
+    <p class="alert alert-danger"><%= alert %></p>
+  <% end %>
+  <%= yield %>
+</div>
+<!-- <footer>
+  <div class="container">
+    AC4D | Holidays 2014
+  </div>
+</footer> -->
+<script src="//railsgirls.com/assets/bootstrap.js"></script>
+</body>
+</html>

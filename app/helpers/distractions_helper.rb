@@ -1,0 +1,3 @@
+module DistractionsHelper
+
+end

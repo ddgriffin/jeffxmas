@@ -1,0 +1,29 @@
+  <h1>Jeff, you got this.</h1>
+  <h2>(But, to really get it, please log in...)</h2>
+  <br />
+
+  <div class="form-inline">
+  <div class="form-container">
+  <%= form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |f| %>
+      <div class="form-group">
+        <%= f.label :email %>
+        <%= f.email_field :email, :autofocus => true, class:"form-control", id:"email" %>
+      </div>
+      <br />
+      <div class="form-group">
+        <%= f.label :password %>
+        <%= f.password_field :password, class:"form-control", id:"pwd" %>
+      </div>
+      <br />
+      <% if devise_mapping.rememberable? -%>
+        <%= f.check_box :remember_me %> <%= f.label :remember_me %>
+      <% end -%>
+    <br />
+    <%= f.submit "Sign in", class:"btn" %>
+    </div>
+  <% end %>
+  </div>
+
+  <%= image_tag "backpack.png", alt:"", class:"image" %>
+
+  <%= render "devise/shared/links" %>

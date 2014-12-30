@@ -1,0 +1,138 @@
+/*
+  =require twitter-bootstrap-static/bootstrap
+
+  Use Font Awesome icons (default)
+  To use Glyphicons sprites instead of Font Awesome, replace with "require twitter-bootstrap-static/sprites"
+  =require twitter-bootstrap-static/fontawesome
+  */
+
+  body {
+  padding-top: 60px;
+  background-image: url(background.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  /*font-family: 'Cabin Condensed', sans-serif;*/
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  color: #ef4623;
+  text-align: center;
+}
+a {
+  font-size: 16px;
+  color: #1c65a6;
+}
+h1 {
+  font-family: 'Cabin Sketch', cursive;
+  font-size: 60px;
+  line-height: 1.2;
+}
+h2 {
+  font-size: 21px;
+  font-weight: 300;
+  line-height: 1.5;
+}
+h3 {
+  font-size: 32px;
+  font-weight: 300;
+}
+h4 {
+  font-family: 'Cabin Sketch', cursive;
+  font-size: 18px;
+}
+.btn {
+  text-transform: uppercase;
+  font-weight: 500;
+  background-color: #1c65a6;
+  background-image: none;
+  text-shadow: none;
+  border: 1px solid #185a94;
+  color: #FFF;
+  padding: 10px 15px 10px 15px;
+}
+.btn:hover {
+  background-color: #185a94;
+  color: #F9F9F9;
+}
+.btn-success {
+  background-color: #ef4623;
+  border: #dd3c22;
+}
+.btn-success:hover {
+  background-color: #dd3c22;
+}
+.btn-mini {
+  padding: 6px 10px 6px 10px;
+  font-size: 13px;
+}
+.btn-super {
+  padding: 24px 40px 24px 40px;
+  font-size: 24px;
+}
+
+/*CONTAINERS*/
+.box {
+  /*padding: 22px;*/
+  width: 186px;
+  height: 170px;
+  padding-top: 25px;
+  margin-top: 25px;
+  margin-right: 48px;
+  border: 2px solid #ef4623;
+  -moz-border-radius: 5px; /*firefox*/
+  -webkit-border-radius: 5px;  /* safari/chrome*/
+  border-radius: 5px; /*CSS3, works in IE9;*/
+  box-shadow: 0px 5px 5px #cccccc;
+}
+.box-right {
+  margin-right: 0px;
+}
+.box:hover {
+  background-color: #eee;
+}
+.frame {
+  border: 2px solid #ef4623;
+  -moz-border-radius: 5px; /*firefox*/
+  -webkit-border-radius: 5px;  /* safari/chrome*/
+  border-radius: 5px; /*CSS3, works in IE9;*/
+  box-shadow: 0px 5px 5px #cccccc;
+}
+
+
+/*FORMS*/
+.form-container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 25%;
+}
+.form-container-lg {
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+.form-group {
+  position: relative;
+  text-align: right;
+}
+.form-group-left {
+  position: relative;
+  text-align: left;
+}
+
+/*BACKGROUND IMAGES*/
+.image {
+  position:absolute;
+  margin-left: auto;
+  margin-right: auto;
+  bottom:15px;
+  left: 0;
+  right: 0;
+}
+
+
+/*EXTRAS*/
+footer { margin-top: 100px; }
+table, td, th { vertical-align: middle; border: none; }
+th { border-bottom: 1px solid #DDD; }
