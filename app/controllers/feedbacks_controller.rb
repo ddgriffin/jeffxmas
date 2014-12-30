@@ -54,7 +54,7 @@ class FeedbacksController < ApplicationController
       error_msg << "<br/>"
       error_msg << msg
     end
-    redirect_to :back, :notice => "Blarf. Something messed up while saving. Check it out and try again: #{error_msg}" and return
+    redirect_to :back, :notice => "Blarf. Something messed up while sending. Try again? #{error_msg}" and return
   end
 
   # PUT /feedbacks/1

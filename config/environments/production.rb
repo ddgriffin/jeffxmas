@@ -48,14 +48,14 @@ Jeffxmas::Application.configure do
   # Precompile additional assets (application.js, application.css, and all non-JS/CSS are already added)
   # config.assets.precompile += %w( search.js )
 
-  config.action_mailer.default_url_options = { :host => 'jeffyougotthis.com' }
+  config.action_mailer.default_url_options = { :host => 'safe-chamber-4755.herokuapp.com' }
   # ActionMailer Config
   # Setup for production - deliveries, no errors raised
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
     address: "smtp.gmail.com",
     port: 587,
-    domain: "mail.google.com",
+    domain: "safe-chamber-4755.herokuapp.com",
     authentication: "plain",
     enable_starttls_auto: true,
     user_name: ENV["GMAIL_USERNAME"],

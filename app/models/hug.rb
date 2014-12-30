@@ -10,7 +10,7 @@ class Hug < ActiveRecord::Base
     if Rails.env.development?
       { :host => 'localhost:3000'}
     else
-      { :host => 'jeffyougotthis.com'}
+      { :host => 'safe-chamber-4755.herokuapp.com'}
     end
   end
 
