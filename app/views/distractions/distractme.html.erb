@@ -1,12 +1,14 @@
 <h1>Jeff, you deserve a break.</h1>
 <br />
 <% @distractions.each do |distraction| %>
-    <%= button_to "Try this", distraction.link, :target => "_blank", class:"btn btn-success" %>
-    <br />
     <p><strong><%= distraction.description if distraction.description.present? %></strong>
     <% if distraction.time.present? %>
       (<%= distraction.time %> minutes)</p>
     <% end %>
+    <br />
+    <%= button_to "Try this", distraction.link, :target => "_blank", class:"btn btn-success" %>
+    <br />
+
   <% if current_user && current_user.admin? %>
     <p><%= link_to 'Edit', edit_distraction_path(distraction) %> &nbsp;|&nbsp;
     <%= link_to 'Delete', distraction, method: :delete, data: { confirm: 'Are you sure?' } %></p>
