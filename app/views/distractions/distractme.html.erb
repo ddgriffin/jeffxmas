@@ -6,7 +6,7 @@
       (<%= distraction.time %> minutes)</p>
     <% end %>
     <br />
-    <%= button_to "Try this", distraction.link, :target => "_blank", class:"btn btn-success" %>
+    <%= link_to "Try this", distraction.link, :target => "_blank", class:"btn btn-success" %>
     <br />
 
   <% if current_user && current_user.admin? %>
