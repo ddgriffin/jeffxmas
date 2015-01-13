@@ -1,7 +1,6 @@
 source 'https://rubygems.org'
 
 gem 'rails', '3.2.11'
-
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
@@ -13,7 +12,10 @@ group :production do
   gem 'rails_12factor'
 end
 
+gem 'jquery-rails'
 gem 'carrierwave'
+gem 'mini_magick'
+gem 'fog'
 gem 'devise'
 gem 'pony'
 gem 'figaro'
@@ -31,7 +33,7 @@ group :assets do
   gem 'twitter-bootstrap-rails'
 end
 
-gem 'jquery-rails'
+
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
