@@ -136,6 +136,14 @@ h4 {
   height: 200px;
 }
 
+/*DISTRACTION VIDEO - use with .frame */
+iframe {
+  border: 2px solid #ef4623;
+  -moz-border-radius: 5px; /*firefox*/
+  -webkit-border-radius: 5px;  /* safari/chrome*/
+  border-radius: 5px; /*CSS3, works in IE9;*/
+  box-shadow: 0px 5px 5px #cccccc;
+}
 
 /*EXTRAS*/
 footer { margin-top: 100px; }

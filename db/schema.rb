@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20141230054307) do
+ActiveRecord::Schema.define(:version => 20150113044538) do
 
   create_table "distractions", :force => true do |t|
     t.string   "link"
@@ -19,6 +19,7 @@ ActiveRecord::Schema.define(:version => 20141230054307) do
     t.datetime "created_at",  :null => false
     t.datetime "updated_at",  :null => false
     t.string   "time"
+    t.string   "link_html"
   end
 
   create_table "feedbacks", :force => true do |t|
