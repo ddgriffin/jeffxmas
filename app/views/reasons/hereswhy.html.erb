@@ -3,7 +3,10 @@
 <% @reasons.each do |reason| %>
   <h3>because <%= reason.because %></h3>
   <p><%= reason.details if reason.details.present? %></p>
-  <%= image_tag(reason.picture_url, :width => 600) if reason.picture.present? %>
+  <% if reason.picture.present? %>
+    <br >
+    <%= link_to image_tag(reason.picture_url, class:"frame reason-image", :target => "_blank"), reason.picture_url %>
+  <% end %>
   <% if current_user && current_user.admin? %>
     <p><%= link_to 'Edit', edit_reason_path(reason) %> &nbsp;|&nbsp;
     <%= link_to 'Delete', reason, method: :delete, data: { confirm: 'Are you sure?' } %></p>

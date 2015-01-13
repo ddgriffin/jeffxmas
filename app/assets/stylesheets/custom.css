@@ -131,6 +131,11 @@ h4 {
   right: 0;
 }
 
+/*REASON IMAGES - use with .frame */
+.reason-image {
+  height: 200px;
+}
+
 
 /*EXTRAS*/
 footer { margin-top: 100px; }

@@ -12,7 +12,7 @@
 
 <p>
   <b>Picture:</b>
-  <%= image_tag(@reason.picture_url, :width => 600) if @reason.picture.present? %>
+  <%= link_to image_tag(@reason.picture_url, class:"frame reason-image", :target => "_blank"), @reason.picture_url if @reason.picture.present? %>
 </p>
 
 
