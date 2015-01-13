@@ -4,8 +4,9 @@
   <h3>because <%= reason.because %></h3>
   <p><%= reason.details if reason.details.present? %></p>
   <% if reason.picture.present? %>
-    <br >
+    <br />
     <%= link_to image_tag(reason.picture_url, class:"frame reason-image", :target => "_blank"), reason.picture_url %>
+    <br />
   <% end %>
   <% if current_user && current_user.admin? %>
     <p><%= link_to 'Edit', edit_reason_path(reason) %> &nbsp;|&nbsp;
